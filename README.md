@@ -1,29 +1,28 @@
-*Simple Dark*
-===============
+Mantis
+==========
 
-*Simple Dark* is a dark theme for Xfce and Geany. 
-It contains styles for widgets and window titles.
+*Mantis* is a dark gray theme for Xfce.   
+It's existence comes from a need for an easy-on-the-eyes workstation theme.
 
-The GTK 2.x and GTK 3.0 widget theme is based on https://github.com/vkuzel/Xfce-darkness .  
-The GTK 3.20 widget theme is based on https://github.com/horst3180/vertex-theme .  
-The window title theme is based on Makulu Black.  
+
+The GTK 2 widget theme is based on Xfce-Simple-Dark (https://github.com/trustable-code/Xfce-Simple-Dark)  
+Basic GTK3 support exists and is lifted from my dark gray spin of the Arc theme (https://github.com/mantissa-/arc-pro-theme)
+
+Xfce panel theming needs some work, but it's not the worst.
+
+Tested on Xubuntu 17.10, YMMV.
+
+![A screenshot of Mantis](https://i.imgur.com/Mjb8o3N.png)
+*Breeze icon set was used in this setup*
 
 Installation
 ------------
 
-1. Copy theme folder `Xfce-Simple-Dark` into your `~/.themes/` directory.
+1. Unzip and rename base folder `Mantis`, then copy into your `~/.themes/` directory.
 2. Open *Appearance* and select the theme.
 3. Open *Window Manager* and select the theme.
-4. To use the theme for Geany, copy files from directory `geany` to `~/.config/geany/colorschemes/`
-
-How to turn off auto-hiding of scrollbars
------------------------------------------
-
-Add the following line to the file `~/.xprofile` respectively `~/.profile` and reboot:
-
-`export GTK_OVERLAY_SCROLLING=0`
 
 License
 -------
 
-GPL
+GPLv3
