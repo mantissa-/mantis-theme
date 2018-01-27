@@ -1,0 +1,164 @@
+#
+#	Darkness: Dark gtk2 theme.
+#
+
+gtk-icon-sizes = "gtk-button = 16,16"
+gtk-icon-sizes = "gtk-menu= 24,24"
+
+style "default"
+{
+    GtkButton::focus-padding                     = 2
+
+    GtkCheckButton::indicator_size               = 14
+    GtkRadioButton::indicator_size               = 14
+
+    GtkComboBox::appears-as-list                 = 0
+
+    GtkMenuBar::internal-padding                 = 2
+    GtkMenuBar::shadow_type                      = in
+    GtkMenuItem::selected_shadow_type            = etched-in
+
+    GtkRange::slider_width                       = 12
+    GtkRange::stepper_size                       = 10
+    GtkRange::stepper_spacing                    = 0
+    GtkRange::trough_border                      = 1
+
+    GtkScrollbar::has_forward_stepper            = 0
+    GtkScrollbar::has_secondary_forward_stepper  = 0
+    GtkScrollbar::has_backward_stepper           = 0
+    GtkScrollbar::has_secondary_backward_stepper = 0
+    GtkScrollbar::min_slider_length              = 50
+
+    GtkScrollbar::slider-width                   = 5
+
+    GtkEntry::cursor_aspect_ratio                = 0.1
+    GtkEntry::cursor_aspect_ratio                = 0.1
+    
+    xthickness             = 1
+    ythickness             = 1
+
+    base[ACTIVE]      = "#333333"
+    base[INSENSITIVE] = "#111111"
+    base[NORMAL]      = "#222222"
+    base[PRELIGHT]    = "#00FF00"
+    base[SELECTED]    = "#383838"
+
+    bg[ACTIVE]        = "#090909"
+    bg[INSENSITIVE]   = "#202020"
+    bg[NORMAL]        = "#171717"
+    bg[PRELIGHT]      = "#333333"
+    bg[SELECTED]      = "#303030"
+
+    fg[ACTIVE]        = "#AAAAAA"
+    fg[INSENSITIVE]   = "#555555"
+    fg[NORMAL]        = "#BEBEBE"
+    fg[PRELIGHT]      = "#CFCFCF"
+    fg[SELECTED]      = "#555555"
+
+    text[ACTIVE]      = "#EEEEEE"
+    text[INSENSITIVE] = "#666666"
+    text[NORMAL]      = "#BEBEBE"
+    text[PRELIGHT]    = "#CFCFCF"
+    text[SELECTED]    = "#EEEEEE"
+
+    engine "murrine"
+    {
+        #options
+        animation           = FALSE  # FALSE = disabled, TRUE = enabled
+        colorize_scrollbar  = TRUE   # FALSE = disabled, TRUE = enabled
+        contrast            = 0.125   # 0.8 for less contrast, more than 1.0 for more contrast on borders
+        glazestyle          = 0    # 0 = flat highlight, 1 = curved highlight, 2 = concave style, 3 = top curved highlight, 4 = beryl highlight
+        glow_shade          = 1.0
+        glowstyle           = 0    # 0 = top, 1 = bottom, 2 = top and bottom, 3 = horizontal, 4 = centered glow
+        gradient_shades     = {1.0, 1.0, 1.0, 1.0}
+        highlight_shade     = 1.0  # set highlight amount for buttons or widgets
+        lightborder_shade   = 15.0   # sets lightborder amount for buttons or widgets
+        lightborderstyle    = 1     # 0 = lightborder on top side, 1 = lightborder on all sides
+        listviewheaderstyle = 0     # 0 = flat, 1 = glassy, 2 = raised
+        listviewstyle       = 0     # 0 = nothing, 1 = dotted
+        menubaritemstyle    = 0     # 0 = menuitem look, 1 = button look
+        menubarstyle        = 3     # 0 = flat, 1 = glassy, 2 = gradient, 3 = striped
+        menuitemstyle       = 2     # 0 = flat, 1 = glassy, 2 = striped
+        menustyle           = 0     # 0 = no vertical menu stripe, 1 = display vertical menu stripe
+        progressbarstyle    = 0     # 0 = flat, 1 = striped, 2 = blocks
+        reliefstyle         = 0     # 0 = flat, 1 = inset, 2 = shadow
+        rgba                = FALSE  # FALSE = disabled, TRUE = enabled
+        roundness           = 0     # 0 = squared, 1 = old default, more will increase roundness
+        scrollbarstyle      = 0     # 0 = nothing, 1 = circles, 2 = handles, 3 = diagonal stripes, 4 = diagonal stripes and handles, 5 = horizontal stripes, 6 = horizontal stripes and handles
+        sliderstyle         = 1     # 0 = nothing added, 1 = handles
+        stepperstyle        = 2     # 0 = standard, 1 = integrated stepper handles, 2 = unknown
+        toolbarstyle        = 0     # 0 = flat, 1 = glassy, 2 = gradient                
+    }
+}
+widget_class "*"                   style "default"
+
+style "menustyle" = "default"
+{
+    xthickness = 1
+    ythickness = 1
+}
+widget_class "*BonoboDockItem"     style "menustyle"
+class "*BonoboDockItem"            style "menustyle"
+widget_class "*ToolBar"            style "menustyle"
+class "*ToolBar"                   style "menustyle"
+widget_class "*MenuBar"            style "menustyle"
+class "*MenuBar"                   style "menustyle"
+
+style "sbstyle" = "default"
+{
+    xthickness = 2
+    ythickness = 2
+
+    bg[NORMAL]        = "#8d8d8d"
+}
+widget_class "*Scrollbar*"         style "sbstyle"
+class "*Scrollbar*"                style "sbstyle"
+widget_class "*GtkScale*"          style "sbstyle"
+class "*GtkScale*"                 style "sbstyle"
+
+style "progress" = "default"
+{
+    bg[SELECTED]      = "#303030"
+    bg[ACTIVE]        = "#000000"
+
+    xthickness = 2
+    ythickness = 2
+}
+widget_class "*GtkProgress*"       style "progress" 
+class "*GtkProgress*"              style "progress" 
+
+style "menuitem" = "default"
+{
+    xthickness = 1
+    ythickness = 3
+}
+
+widget_class "*MenuItem*"          style "menuitem"
+class "*MenuItem*"                 style "menuitem"
+
+style "flat" = "default"
+{
+    xthickness = 2
+    ythickness = 2
+}
+widget_class "*HandleBox"         style "flat"
+
+# This is for the window borders (xfwm4 & metacity)
+# 
+style "titlebar"
+{
+    bg[SELECTED]      = "#444444"
+    fg[SELECTED]      = "#ffffff"
+    bg[INSENSITIVE]   = "#202020"
+    fg[INSENSITIVE]   = "#808080"
+}
+
+widget "xfwm"                      style "titlebar"
+class "MetaFrames"                 style "titlebar"
+widget_class "MetaFrames"          style "titlebar"
+
+style "xfce-tasklist-style"
+{
+	XfceTasklist::max-button-length = 200
+}
+class "XfceTasklist" style "xfce-tasklist-style"
