@@ -158,43 +158,43 @@ entry {
     border-color: rgba(6, 6, 6, 0.55);
     background-color: rgba(29, 29, 29, 0.55); }
   entry.warning {
-    color: BCBCBC;
+    color: #BCBCBC;
     border-color: #060606;
     background-color: #7f3913; }
     entry.warning image {
-      color: BCBCBC; }
+      color: #BCBCBC; }
     entry.warning:focus {
-      color: BCBCBC;
+      color: #BCBCBC;
       background-color: #C04B0C;
       box-shadow: none; }
     entry.warning selection, entry.warning selection:focus {
-      background-color: BCBCBC;
+      background-color: #BCBCBC;
       color: #C04B0C; }
   entry.error {
-    color: BCBCBC;
+    color: #BCBCBC;
     border-color: #060606;
     background-color: #66120d; }
     entry.error image {
-      color: BCBCBC; }
+      color: #BCBCBC; }
     entry.error:focus {
-      color: BCBCBC;
+      color: #BCBCBC;
       background-color: #970A02;
       box-shadow: none; }
     entry.error selection, entry.error selection:focus {
-      background-color: BCBCBC;
+      background-color: #BCBCBC;
       color: #970A02; }
   entry.search-missing {
-    color: BCBCBC;
+    color: #BCBCBC;
     border-color: #060606;
     background-color: #66120d; }
     entry.search-missing image {
-      color: BCBCBC; }
+      color: #BCBCBC; }
     entry.search-missing:focus {
-      color: BCBCBC;
+      color: #BCBCBC;
       background-color: #970A02;
       box-shadow: none; }
     entry.search-missing selection, entry.search-missing selection:focus {
-      background-color: BCBCBC;
+      background-color: #BCBCBC;
       color: #970A02; }
   entry:drop(active):focus, entry:drop(active) {
     border-color: #8E420B;
@@ -378,7 +378,7 @@ button, .budgie-panel button {
     box-shadow: none; }
   button.suggested-action {
     background-clip: border-box;
-    color: BCBCBC;
+    color: #BCBCBC;
     background-color: #636363;
     border-color: #636363; }
     button.suggested-action.flat, button.suggested-action.sidebar-button {
@@ -388,12 +388,12 @@ button, .budgie-panel button {
       color: #636363; }
     button.suggested-action:hover {
       background-clip: border-box;
-      color: BCBCBC;
+      color: #BCBCBC;
       background-color: #7d7d7d;
       border-color: #7d7d7d; }
     button.suggested-action:active, button.suggested-action:checked {
       background-clip: border-box;
-      color: BCBCBC;
+      color: #BCBCBC;
       background-color: #4a4a4a;
       border-color: #4a4a4a; }
     button.suggested-action.flat:disabled, button.suggested-action.sidebar-button:disabled {
@@ -408,7 +408,7 @@ button, .budgie-panel button {
         color: rgba(187, 187, 187, 0.45); }
   button.destructive-action {
     background-clip: border-box;
-    color: BCBCBC;
+    color: #BCBCBC;
     background-color: #8F0A0E;
     border-color: #8F0A0E; }
     button.destructive-action.flat, button.destructive-action.sidebar-button {
@@ -418,12 +418,12 @@ button, .budgie-panel button {
       color: #8F0A0E; }
     button.destructive-action:hover {
       background-clip: border-box;
-      color: BCBCBC;
+      color: #BCBCBC;
       background-color: #bf0d13;
       border-color: #bf0d13; }
     button.destructive-action:active, button.destructive-action:checked {
       background-clip: border-box;
-      color: BCBCBC;
+      color: #BCBCBC;
       background-color: #5f0709;
       border-color: #5f0709; }
     button.destructive-action.flat:disabled, button.destructive-action.sidebar-button:disabled {
@@ -1119,24 +1119,24 @@ window.csd > .titlebar:not(headerbar):backdrop {
     background-image: none;
     background-color: transparent; }
   .primary-toolbar entry.warning, headerbar entry.warning {
-    color: BCBCBC;
+    color: #BCBCBC;
     border-color: rgba(10, 10, 10, 0.37);
     background-color: rgba(134, 62, 23, 0.988); }
     .primary-toolbar entry.warning:focus, headerbar entry.warning:focus {
-      color: BCBCBC;
+      color: #BCBCBC;
       background-color: #C04B0C; }
     .primary-toolbar entry.warning selection, headerbar entry.warning selection, .primary-toolbar entry.warning selection:focus, headerbar entry.warning selection:focus {
-      background-color: BCBCBC;
+      background-color: #BCBCBC;
       color: #C04B0C; }
   .primary-toolbar entry.error, headerbar entry.error {
-    color: BCBCBC;
+    color: #BCBCBC;
     border-color: rgba(10, 10, 10, 0.37);
     background-color: rgba(109, 22, 17, 0.988); }
     .primary-toolbar entry.error:focus, headerbar entry.error:focus {
-      color: BCBCBC;
+      color: #BCBCBC;
       background-color: #970A02; }
     .primary-toolbar entry.error selection, headerbar entry.error selection, .primary-toolbar entry.error selection:focus, headerbar entry.error selection:focus {
-      background-color: BCBCBC;
+      background-color: #BCBCBC;
       color: #970A02; }
 
 .primary-toolbar button, headerbar button, headerbar .budgie-panel button, .budgie-panel headerbar button {
@@ -1248,7 +1248,7 @@ window.csd > .titlebar:not(headerbar):backdrop {
 
 .primary-toolbar button.suggested-action, headerbar button.suggested-action {
   background-clip: border-box;
-  color: BCBCBC;
+  color: #BCBCBC;
   background-color: #636363;
   border-color: #636363; }
   .primary-toolbar button.suggested-action.flat, headerbar button.suggested-action.flat, .primary-toolbar button.suggested-action.sidebar-button, headerbar button.suggested-action.sidebar-button {
@@ -1258,12 +1258,12 @@ window.csd > .titlebar:not(headerbar):backdrop {
     color: #636363; }
   .primary-toolbar button.suggested-action:hover, headerbar button.suggested-action:hover {
     background-clip: border-box;
-    color: BCBCBC;
+    color: #BCBCBC;
     background-color: #7d7d7d;
     border-color: #7d7d7d; }
   .primary-toolbar button.suggested-action:active, headerbar button.suggested-action:active, .primary-toolbar button.suggested-action:checked, headerbar button.suggested-action:checked {
     background-clip: border-box;
-    color: BCBCBC;
+    color: #BCBCBC;
     background-color: #4a4a4a;
     border-color: #4a4a4a; }
   .primary-toolbar button.suggested-action.flat:disabled, headerbar button.suggested-action.flat:disabled, .primary-toolbar button.suggested-action.sidebar-button:disabled, headerbar button.suggested-action.sidebar-button:disabled, .primary-toolbar button.suggested-action:disabled, headerbar button.suggested-action:disabled {
@@ -1277,7 +1277,7 @@ window.csd > .titlebar:not(headerbar):backdrop {
 
 .primary-toolbar button.destructive-action, headerbar button.destructive-action {
   background-clip: border-box;
-  color: BCBCBC;
+  color: #BCBCBC;
   background-color: #8F0A0E;
   border-color: #8F0A0E; }
   .primary-toolbar button.destructive-action.flat, headerbar button.destructive-action.flat, .primary-toolbar button.destructive-action.sidebar-button, headerbar button.destructive-action.sidebar-button {
@@ -1287,12 +1287,12 @@ window.csd > .titlebar:not(headerbar):backdrop {
     color: #8F0A0E; }
   .primary-toolbar button.destructive-action:hover, headerbar button.destructive-action:hover {
     background-clip: border-box;
-    color: BCBCBC;
+    color: #BCBCBC;
     background-color: #bf0d13;
     border-color: #bf0d13; }
   .primary-toolbar button.destructive-action:active, headerbar button.destructive-action:active, .primary-toolbar button.destructive-action:checked, headerbar button.destructive-action:checked {
     background-clip: border-box;
-    color: BCBCBC;
+    color: #BCBCBC;
     background-color: #5f0709;
     border-color: #5f0709; }
   .primary-toolbar button.destructive-action.flat:disabled, headerbar button.destructive-action.flat:disabled, .primary-toolbar button.destructive-action.sidebar-button:disabled, headerbar button.destructive-action.sidebar-button:disabled, .primary-toolbar button.destructive-action:disabled, headerbar button.destructive-action:disabled {
@@ -3138,7 +3138,7 @@ popover.background label.nautilus-canvas-item.separator, headerbar .nautilus-can
   animation-iteration-count: 3; }
 
 .conflict-row.activatable, .conflict-row.activatable:active {
-  color: BCBCBC;
+  color: #BCBCBC;
   background-color: #970A02; }
 
 .conflict-row.activatable:hover {
