@@ -1,0 +1,163 @@
+# Mantis Dusk Xfce Theme
+# Midge Sinnaeve - 180611
+
+gtk-icon-sizes = "gtk-button = 16,16"
+gtk-icon-sizes = "gtk-menu= 24,24"
+
+style "default"
+{
+    GtkButton::focus-padding                     = 2
+
+    GtkCheckButton::indicator_size               = 14
+    GtkRadioButton::indicator_size               = 14
+
+    GtkComboBox::appears-as-list                 = 0
+
+    GtkMenuBar::internal-padding                 = 0
+    GtkMenuBar::shadow_type                      = in
+    GtkMenuItem::selected_shadow_type            = none
+
+    GtkRange::slider_width                       = 8
+    GtkRange::stepper_size                       = 10
+    GtkRange::stepper_spacing                    = 0
+    GtkRange::trough_border                      = 0
+
+    GtkScrollbar::has_forward_stepper            = 0
+    GtkScrollbar::has_secondary_forward_stepper  = 0
+    GtkScrollbar::has_backward_stepper           = 0
+    GtkScrollbar::has_secondary_backward_stepper = 0
+    GtkScrollbar::min_slider_length              = 75
+
+    GtkScrollbar::slider-width                   = 7
+
+    GtkEntry::cursor_aspect_ratio                = 0.1
+    GtkEntry::cursor_aspect_ratio                = 0.1
+    
+    xthickness             = 1
+    ythickness             = 1
+
+    base[ACTIVE]      = "#242424" # Inactive Highlight
+    base[INSENSITIVE] = "#151515" # Inactive Input Box
+    base[NORMAL]      = "#181818" # Lists (ie. Windows Manager BG)
+    base[PRELIGHT]    = "#202020" # Still no idea what this is
+    base[SELECTED]    = "#333333" # Active Selection Highlight
+
+    bg[ACTIVE]        = "#181818" # Active Tabs BG
+    bg[INSENSITIVE]   = "#242424" # Inactive Controls
+    bg[NORMAL]        = "#242424" # Main Window BG
+    bg[PRELIGHT]      = "#303030" # Mouse Hover Highlight
+    bg[SELECTED]      = "#333333" # Active Checkbox BG
+
+    fg[ACTIVE]        = "#A5A5A5" # Selected Option / Inactive Tab Text
+    fg[INSENSITIVE]   = "#444444" # Inactive Unselectable Option Text
+    fg[NORMAL]        = "#A5A5A5" # Main UI Text Color
+    fg[PRELIGHT]      = "#CCCCCC" # Hover Hilight Text Color
+    fg[SELECTED]      = "#505050" # List Border Highlight
+
+    text[ACTIVE]      = "#AAAAAA" # Inactive Window Selected Text
+    text[INSENSITIVE] = "#444444" # Inactive Unselected Text
+    text[NORMAL]      = "#888888" # Main Item Text Color
+    text[PRELIGHT]    = "#CCCCCC" # Checkbox Hover Higlight Color
+    text[SELECTED]    = "#CCCCCC" # Selected Text / Selected Ative Option Text
+
+    engine "murrine"
+    {
+        #options
+        animation           = FALSE  # FALSE = disabled, TRUE = enabled
+        colorize_scrollbar  = FALSE   # FALSE = disabled, TRUE = enabled
+        contrast            = 0.0   # 0.8 for less contrast, more than 1.0 for more contrast on borders
+        glazestyle          = 0     # 0 = flat highlight, 1 = curved highlight, 2 = concave style, 3 = top curved highlight, 4 = beryl highlight
+        glow_shade          = 1.0
+        glowstyle           = 0    # 0 = top, 1 = bottom, 2 = top and bottom, 3 = horizontal, 4 = centered glow
+        gradient_shades     = {1.5, 1.5, 1.5, 1.5}
+        highlight_shade     = 1.0   # set highlight amount for buttons or widgets
+        lightborder_shade   = 0.0   # sets lightborder amount for buttons or widgets
+        lightborderstyle    = 0     # 0 = lightborder on top side, 1 = lightborder on all sides
+        listviewheaderstyle = 2     # 0 = flat, 1 = glassy, 2 = raised
+        listviewstyle       = 0     # 0 = nothing, 1 = dotted
+        menubaritemstyle    = 1     # 0 = menuitem look, 1 = button look
+        menubarstyle        = 0     # 0 = flat, 1 = glassy, 2 = gradient, 3 = striped
+        menuitemstyle       = 1     # 0 = flat, 1 = glassy, 2 = striped
+        menustyle           = 0     # 0 = no vertical menu stripe, 1 = display vertical menu stripe
+        progressbarstyle    = 0     # 0 = flat, 1 = striped, 2 = blocks
+        reliefstyle         = 0     # 0 = flat, 1 = inset, 2 = shadow
+        rgba                = TRUE  # FALSE = disabled, TRUE = enabled
+        roundness           = 3     # 0 = squared, 1 = old default, more will increase roundness
+        scrollbarstyle      = 0     # 0 = nothing, 1 = circles, 2 = handles, 3 = diagonal stripes, 4 = diagonal stripes and handles, 5 = horizontal stripes, 6 = horizontal stripes and handles
+        sliderstyle         = 1     # 0 = nothing added, 1 = handles
+        stepperstyle        = 0     # 0 = standard, 1 = integrated stepper handles, 2 = unknown
+        toolbarstyle        = 0     # 0 = flat, 1 = glassy, 2 = gradient                
+    }
+}
+widget_class "*"                   style "default"
+
+style "menustyle" = "default"
+{
+    xthickness = 2
+    ythickness = 2
+}
+widget_class "*BonoboDockItem"     style "menustyle"
+class "*BonoboDockItem"            style "menustyle"
+widget_class "*ToolBar"            style "menustyle"
+class "*ToolBar"                   style "menustyle"
+widget_class "*MenuBar"            style "menustyle"
+class "*MenuBar"                   style "menustyle"
+
+style "sbstyle" = "default"
+{
+    xthickness = 1
+    ythickness = 1
+
+    bg[NORMAL]        = "#252525"
+}
+widget_class "*Scrollbar*"         style "sbstyle"
+class "*Scrollbar*"                style "sbstyle"
+widget_class "*GtkScale*"          style "sbstyle"
+class "*GtkScale*"                 style "sbstyle"
+
+style "progress" = "default"
+{
+    bg[SELECTED]      = "#383838"
+    bg[ACTIVE]        = "#080808"
+
+    xthickness = 1
+    ythickness = 1
+}
+widget_class "*GtkProgress*"       style "progress" 
+class "*GtkProgress*"              style "progress" 
+
+style "menuitem" = "default"
+{
+    xthickness = 2
+    ythickness = 3
+}
+
+widget_class "*MenuItem*"          style "menuitem"
+class "*MenuItem*"                 style "menuitem"
+
+style "flat" = "default"
+{
+    xthickness = 2
+    ythickness = 2
+}
+widget_class "*HandleBox"         style "flat"
+
+# This is for the window borders (xfwm4 & metacity)
+ 
+style "titlebar"
+{
+    bg[SELECTED]      = "#444444"
+    fg[SELECTED]      = "#ffffff"
+    bg[INSENSITIVE]   = "#202020"
+    fg[INSENSITIVE]   = "#808080"
+}
+
+widget "xfwm"                      style "titlebar"
+class "MetaFrames"                 style "titlebar"
+widget_class "MetaFrames"          style "titlebar"
+
+style "xfce-tasklist-style"
+{
+	XfceTasklist::max-button-length = 250
+}
+class "XfceTasklist" style "xfce-tasklist-style"
